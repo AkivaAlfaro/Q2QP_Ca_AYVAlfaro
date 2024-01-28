@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+*{
+    margin: 0;
+}
+body{
+    background-color: #2660A4;
+}
+/*Navbar starts*/
+nav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 3vw;
+    padding: 2vw;
+    background-image: linear-gradient(to right, #edf7f6, rgb(47, 130, 254));
+    font-family: 'Salsa', sans-serif;
+}
+.advologo{
+    float: left;
+    margin-left: 1vh;
+}
+.advologo img{
+    height: 70px;
+    width: 170px;
+}
+.advologo, .pages{
+    display: inline-block;
+}
+.pages{
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    box-shadow: 5px 4px 4px black;
+    margin: 4vw;
+    margin-top: 1vw;
+    float: right;
+    font-size: x-large;
+    padding: 2px 2px;
+}
+.pages a{
+    text-decoration: none;
+}
+.pages a:hover{
+    padding: 2px 7px 2px 7px;
+    border-radius: 4px;
+    background-color: orange;
+    color: black;
+    transition: 0.4s;
+    text-decoration: none;
+}
+/*Navbar ends*/
+
+/*Footer starts*/
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 3vw;
+    padding: 1vw;
+    background-image: linear-gradient(to right, rgb(47, 130, 254),#edf7f6);
+    font-family: 'Salsa', sans-serif;
+}
+.copyright{
+    float: left;
+    margin-top: 0.5vw;
+    margin-right: 50vw;
+}
+.sprite{
+    background: url('../images/sprite3.png');
+}
+.contactdetails{
+    background: url('../images/sprite3.png');
+    background-repeat: no-repeat;
+    width: 3.5vw;
+    height: 7vh;
+    display: inline-block;
+}
+#pinterest{
+    background-position: -141px -221px;
+}
+#facebook{
+    background-position: -439px -146px;
+}
+#skype{
+    background-position: -365px -147px;
+}
+#instagram{
+    background-position: -290px -221px;
+}
+/*Footer ends*/
+
+/*Home starts*/
+article{
+    font-family: 'Salsa', sans-serif;
+    background-color: #56351e;
+    margin-top: 7vw;
+    margin-left: 13vw;
+    display: inline-flex;
+    border: 1px solid black;
+    border-radius: 10px;
+    animation: articleanimate 3s;
+}
+.articleslogan{
+    color: white;
+    padding: 30px;
+    margin-top: 11vw;
+    font-size: xx-large;
+    text-shadow: 3px 5px 5px black;
+}
+section{
+    font-family: 'Salsa', sans-serif;
+    margin: 2.5vw;
+    margin-top: 1vw;
+    animation: sectionanimate 3s;
+}
+.organization{
+    border: 0.1vw solid #f19953;
+    background-color: #f19953;
+    padding: 0.5vw;
+    margin-bottom: 1vw;
+}
+.organizationtext{
+    margin-left: 1.5vw;
+}
+.organization1{
+    margin-bottom: 7vw;
+    border: 1px solid #f19953;
+    background-color: #f19953;
+    padding: 5px;
+}
+.organizationtext1{
+    margin-left: 1.5vw;
+}
+/*Home ends*/
+
+/*What We Do starts*/
+.img img{
+    width: 50vw;
+    height: 70vh;
+}
+.initiatives{
+    border: 0.1vw solid #f19953;
+    background-color: #f19953;
+    padding: 0.5vw;
+    margin-bottom: 1vw;
+}
+.initiativestext{
+    margin-left: 1.5vw;
+}
+.involvements{
+    border: 0.1vw solid #f19953;
+    background-color: #f19953;
+    padding: 0.5vw;
+    margin-bottom: 1vw;
+}
+.involvementstext{
+    margin-left: 1.5vw;
+}
+.activities{
+    border: 0.1vw solid #f19953;
+    background-color: #f19953;
+    padding: 0.5vw;
+    margin-bottom: 6vw;
+}
+.activitiestext{
+    margin-left: 1.5vw;
+}
+/*What We Do ends*/
+
+/*About Us starts*/
+.whoweare{
+    border: 0.1vw solid #f19953;
+    background-color: #f19953;
+    padding: 0.5vw;
+    margin-bottom: 1vw;
+}
+.whowearetext{
+    margin-left: 1.5vw;
+}
+.vision{
+    border: 0.1vw solid #f19953;
+    background-color: #f19953;
+    padding: 0.5vw;
+    margin-bottom: 1vw;
+}
+.visiontext{
+    margin-left: 1.5vw;
+}
+.mission{
+    border: 0.1vw solid #f19953;
+    background-color: #f19953;
+    padding: 0.5vw;
+    margin-bottom: 1vw;
+}
+.missiontext{
+    margin-left: 1.5vw;
+}
+.howtohelp{
+    border: 0.1vw solid #f19953;
+    background-color: #f19953;
+    padding: 0.5vw;
+    margin-bottom: 6vw;
+}
+.howtohelptext{
+    margin-left: 1.5vw;
+}
+/*About Us ends*/
+/*Animations & Transformations*/
+@keyframes sectionanimate{
+    0%{transform: scale(0) rotate(180deg);}
+    100%{transform: scale(1) rotate(-180deg);}
+}
+@keyframes articleanimate{
+    0%{transform: skew(180deg, 90deg);}
+    50%{transform: skew(90deg, 180deg);}
+    100%{transform: skew(180deg, 180deg);}
+}
+/*for mobile*/
+@media (orientation: portrait) {
+    body{
+        flex-direction: column;
+    }
+}
+/*for desktop*/
+@media (orientation: landscape){
+    body{
+        flex-direction: row;
+    }
+}
+/*End*/
